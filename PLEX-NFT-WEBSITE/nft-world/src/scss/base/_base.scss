@@ -2,12 +2,6 @@
 
 :root{
     --font-family: 'Inter', sans-serif;
-    --orange: #ff8139;
-    --pink: #ff3998;
-    --green: #39ffa0;
-    --red: #ff3939;
-    --light-green: #edfff6;
-    --light-orange: #fff0e8;
     --accent-color1: #ffffff;
     --accent-color2: #555555;
     --accent-color3: #cccccc;
@@ -59,5 +53,5 @@ html {
 }
   
 ::-webkit-scrollbar-thumb {
-    background-color: var(--orange);
+    background-color: blue;
 }

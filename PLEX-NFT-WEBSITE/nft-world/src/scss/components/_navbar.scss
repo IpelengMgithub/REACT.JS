@@ -11,10 +11,6 @@ nav {
       .toggle_contain {
         display: none;
 
-        .toggle_ {
-        }
-        .mode_ {
-        }
       }
     }
     .links_contain {
@@ -84,7 +80,7 @@ nav {
       }
       .links_contain {
         z-index: 30;
-        background-image: linear-gradient(101deg, var(--pink), var(--orange));
+        background-image: linear-gradient(101deg, blue, purple);
         height: 100vh;
         position: absolute;
         top: 0;

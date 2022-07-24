@@ -6,7 +6,6 @@ export default function Home(){
     <div className="home">
       <div className="container">
         <div className="content">
-          <p className="sub_title">Coming soon</p>
           <h1 className="title">Introducing Plex nft</h1>
           <p className="description">
             Explore the amazing world of PTM. Sign up below to
