@@ -1,5 +1,4 @@
 import React from "react";
-import Clients from "./components/Clients";
 import Footer from "./components/Footer";
 import Free from "./components/Free";
 import Home from "./components/Home";
@@ -18,7 +17,6 @@ export default function App(){
     <Navbar/>
     <Home/>
     <Free/>
-    <Clients/>
     <SuperRare/>
     <Release/>
     <Like/>
