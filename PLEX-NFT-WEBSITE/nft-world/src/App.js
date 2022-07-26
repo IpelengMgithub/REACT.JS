@@ -19,8 +19,8 @@ export default function App(){
     <Free/>
     <SuperRare/>
     <Release/>
-    <Like/>
     <SignUp/>
+    <Like/>
     <Footer/>    
   </div>);
 }
