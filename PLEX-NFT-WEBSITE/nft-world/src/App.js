@@ -1,26 +1,68 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Footer from "./components/Footer";
 import Free from "./components/Free";
 import Home from "./components/Home";
 import Like from "./components/Like";
 import Navbar from "./components/Navbar";
 import Release from "./components/Release";
-import ScrollTop from "./components/ScrollTop";
-import SignUp from "./components/SignUp";
+import ScrollToTop from "./components/ScrollTop";
+import Signup from "./components/SignUp";
 import SuperRare from "./components/SuperRare";
+import scrollreveal from "scrollreveal";
 import "./scss/index.scss";
 
-export default function App(){
+function App() {
+  const [theme, setTheme] = useState("dark");
+  const changeTheme = () => {
+    theme === "dark" ? setTheme("light") : setTheme("dark");
+  };
+  useEffect(() => {
+    const registerAnimations = () => {
+      const sr = scrollreveal({
+        origin: "bottom",
+        distance: "80px",
+        duration: 2000,
+        reset: false,
+      });
+      sr.reveal(
+        `
+        nav,
+        .home,
+        .free,
+        .super_rare,
+        .releases,
+        .like,
+        .signup,
+        footer
+    `,
+        {
+          interval: 500,
+        }
+      );
+    };
+    registerAnimations();
+  }, []);
+  window.setTimeout(() => {
+    const home = document.getElementsByClassName("home");
+    home[0].style.transform = "none";
+    const nav = document.getElementsByTagName("nav");
+    nav[0].style.transform = "none";
+  }, 1500);
   return (
-  <div className = "app-container">
-    <ScrollTop/>
-    <Navbar/>
-    <Home/>
-    <Free/>
-    <SuperRare/>
-    <Release/>
-    <SignUp/>
-    <Like/>
-    <Footer/>    
-  </div>);
+    <div data-theme={theme} className="app-container">
+      <ScrollToTop />
+      <Navbar changeTheme={changeTheme} currentTheme={theme} />
+      <Home />
+      <Free />
+      <SuperRare />
+      <Release />
+      <Like />
+      <Signup />
+      <Footer />
+    </div>
+  );
 }
+
+export default App;
+
+
