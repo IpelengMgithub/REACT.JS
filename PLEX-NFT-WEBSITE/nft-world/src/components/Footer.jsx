@@ -58,6 +58,7 @@ export default function Footer(){
       </div>
       <div className="lower">
         <span>&copy; Copyright plex-NFT</span>
+        <span> Created by : Ipeleng Moja web-designer</span>
       </div>
     </footer>
   );

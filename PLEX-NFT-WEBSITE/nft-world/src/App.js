@@ -28,8 +28,8 @@ function App() {
         `
         nav,
         .home,
-        .free,
         .super_rare,
+        .free,
         .releases,
         .like,
         .signup,
@@ -53,8 +53,8 @@ function App() {
       <ScrollToTop />
       <Navbar changeTheme={changeTheme} currentTheme={theme} />
       <Home />
-      <Free />
       <SuperRare />
+      <Free />
       <Release />
       <Like />
       <Signup />

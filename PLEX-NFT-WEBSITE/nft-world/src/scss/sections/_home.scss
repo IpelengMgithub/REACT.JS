@@ -13,13 +13,13 @@
         align-items: flex-start;
 
         .title {
-          color: white;
+          color: var(--heading-text);
         }
         .description {
-          color: whitesmoke;
+          color: var(--heading-text);
         }
         button {
-          color: white;
+          color: var(--heading-text);
           background-color: var(--background);
           font-weight: bold;
           padding: 1rem 3rem;
